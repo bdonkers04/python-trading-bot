@@ -4,19 +4,19 @@
 
 ---
 
-## 🚀 Overview
+## Overview
 
 This project fetches **1-minute candlestick data (30 days)** from Binance and applies a rule-based trading strategy:
 
-- 📉 **Buy** when the asset is oversold (low RSI) and below the moving average  
-- 📈 **Sell** when profit target is hit or price weakens  
-- 💰 Tracks portfolio growth over time  
+- **Buy** when the asset is oversold (low RSI) and below the moving average  
+- **Sell** when profit target is hit or price weakens  
+- Tracks portfolio growth over time  
 
 It also exports indicator data to CSV for further analysis.
 
 ---
 
-## 🧠 Strategy Logic
+## Strategy Logic
 
 ### Buy Condition
 - RSI < 20 (oversold)
@@ -33,7 +33,7 @@ It also exports indicator data to CSV for further analysis.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - Python
 - NumPy
@@ -44,9 +44,26 @@ It also exports indicator data to CSV for further analysis.
 
 ---
 
-## 📦 Installation
+## Installation
 
 ### 1. Clone the repo
 ```bash
 git clone https://github.com/your-username/your-repo.git
 cd your-repo
+```
+### 2. Configuration
+Open the script and replace the placeholder strings with your actual Binance API credentials:
+```bash
+api_key = "YOUR_API_KEY"
+api_secret = "YOUR_API_SECRET"
+```
+
+### 3. Running the Bot
+
+Execute the script to start the backtest. The bot will fetch the last 30 days of data and process it immediately:
+```bash
+python bot.py
+```
+
+
+
