@@ -19,8 +19,8 @@ boughtCloses, boughtTimes = [], []
 soldCloses, soldTimes = [], []
 
 # API Credentials (Replace with environment variables for security)
-api_key = "****"
-api_secret = "****"
+api_key = "YOUR_API_KEY"
+api_secret = "YOUR_API_SECRET"
 
 # Backtesting starting parameters
 startingMoney = 1000
